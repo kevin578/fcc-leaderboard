@@ -11,21 +11,21 @@ const Table = (props) => {
       ),
     },
     {
-      Header: 'User',
+      Header: 'Camper Name',
       accessor: 'username',
       Cell: row => (
         <div>
-          <span>{row.value}</span>
           <img src={row.original.img} alt="user pic" className="table__img" />
+          <span>{row.value}</span>
         </div>
       ),
     },
     {
-      Header: 'Recent',
+      Header: 'Points in past 30 days',
       accessor: 'recent',
     },
     {
-      Header: 'All time',
+      Header: 'All time points',
       accessor: 'alltime',
     },
   ];
@@ -36,6 +36,8 @@ const Table = (props) => {
         <ReactTable
           data={props.campers}
           columns={columns}
+          className="table -striped"
+          defaultPageSize={10}
         />
         }
     </div>

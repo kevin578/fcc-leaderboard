@@ -3,6 +3,18 @@
     font-family: Helvetica, sans-serif;
 }
 
+.table {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rt-td {
+    padding-top: 5px;
+}
+
 .table__img {
     width:30px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
